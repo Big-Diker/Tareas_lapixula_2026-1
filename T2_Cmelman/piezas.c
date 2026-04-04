@@ -3,7 +3,7 @@
 #include "tablero.h"
 #include <stdlib.h>
 
-static void crear_colocar(struct Juego *juego, char tipo, int hp, int x, int y) {
+static Pieza* crear_colocar(struct Juego *juego, char tipo, int hp, int x, int y) {
     Pieza *p = malloc(sizeof(Pieza));
     p->tipo = tipo;
     p->hp = hp;
@@ -13,17 +13,16 @@ static void crear_colocar(struct Juego *juego, char tipo, int hp, int x, int y) 
     Celda *c = malloc(sizeof(Celda));
     c->pieza = p;
 
-    juego->t->celdas[y][x] = (void *)c; 
+    juego->t->celdas[y][x] = (void *)c;
+
+    return p;
 }
 
 static void spawn_rey(struct Juego *juego, int width, int hp){
-
+    int y_rey = 0;
     int x_rey = (rand() % (width - 2)) + 1; // ignora los bordes
 
-    juego->jugador->x = x_rey;
-    juego->jugador->y = 0;
-    juego->jugador->tipo = 'R';
-    juego->jugador->hp = hp;
+    juego->jugador = crear_colocar(juego, 'R', hp, x_rey, y_rey);
 }
 
 static void spawn_enemigo(struct Juego *juego, int width, int height, char tipo, int hp, int cantidad, int fila) {
