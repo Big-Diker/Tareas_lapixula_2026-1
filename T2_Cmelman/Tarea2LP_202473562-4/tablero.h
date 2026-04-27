@@ -1,5 +1,5 @@
-#ifndef TABLERO.H
-#define TABLERO.H
+#ifndef TABLERO_H
+#define TABLERO_H
 
 struct Juego;
 

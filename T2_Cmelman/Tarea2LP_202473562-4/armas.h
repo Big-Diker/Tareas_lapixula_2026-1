@@ -1,5 +1,5 @@
-#ifndef ARMAS.H
-#define ARMAS.H
+#ifndef ARMAS_H
+#define ARMAS_H
 
 #include <stdbool.h>
 
@@ -16,7 +16,7 @@ typedef struct Armas {
 bool escopeta(struct Juego *j, int dir_x, int dir_y);
 bool francotirador(struct Juego *j, int dir_x, int dir_y); /* Ej (x,y) = (1,0), (0,-1)... */
 bool granada(struct Juego *j, int target_x, int target_y);
-bool especial(struct Juego *j, int dir_x, int dir_y); /* Se puede modificar */
+bool escudito(struct Juego *j, int dir_x, int dir_y); /* Se puede modificar */
 /* Es imperativo el uso del arreglo FuncArma para utilizar las funciones de disparo */
 /* Ej de uso en main : juego->arsenal.disparar[3](juego, input_x, input_y); */
 

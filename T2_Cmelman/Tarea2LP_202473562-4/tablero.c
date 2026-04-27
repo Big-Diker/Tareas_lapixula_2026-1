@@ -2,10 +2,22 @@
 #include "piezas.h"
 #include "main.h"
 #include "armas.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 
 struct Tablero* tablero_crear(int ancho, int alto) {
+/*
+ * Función: tablero_crear
+ * ----------------------
+ * Aloja la memoria dinámica inicial para la estructura Tablero y su 
+ * matriz tridimensional de punteros void***, asegurando que todos los 
+ * punteros inicien en estado NULL mediante calloc.
+ *
+ * ancho, alto: Dimensiones del grid del tablero.
+ *
+ * retorna: Puntero al nuevo Tablero listo para ser usado.
+ */
     struct Tablero *nuevo_tablero = malloc(sizeof(Tablero));
 
     nuevo_tablero->W = ancho;
@@ -20,6 +32,15 @@ struct Tablero* tablero_crear(int ancho, int alto) {
 }
 
 void tablero_imprimir(struct Juego *juego) {
+/*
+ * Función: tablero_imprimir
+ * -------------------------
+ * Imprime el estado visual del juego por la salida estándar. 
+ * Formatea las coordenadas X e Y en los ejes, ajustando el espaciado para 
+ * evitar desfases visuales en tableros de dos dígitos (ej. 12x12).
+ *
+ * juego: Puntero al estado del juego.
+ */
     for (int y = juego->t->H - 1; y >= 0; --y) {
         printf("%2d ", y + 1); // print de las coords en y (+1 para corregir desfase)
         // uso %2d para que no se desfase el tablero cuando el n. de la altura sea de 2 digitos
@@ -47,6 +68,16 @@ void tablero_imprimir(struct Juego *juego) {
 }
 
 void tablero_liberar(struct Tablero *tablero) {
+/*
+ * Función: tablero_liberar
+ * ------------------------
+ * Rutina exhaustiva de recolección de basura. Itera sobre cada nodo de la 
+ * matriz tridimensional liberando secuencialmente Piezas residuales, 
+ * Celdas, columnas, filas y finalmente la estructura Tablero en sí, 
+ * garantizando cero fugas de memoria entre niveles.
+ *
+ * tablero: Puntero a la estructura Tablero a destruir.
+ */
     for (int i = 0; i < tablero->H; ++i) {
         for (int j = 0; j < tablero->W; ++j) {
             Celda *celda = (Celda *)tablero->celdas[i][j];
