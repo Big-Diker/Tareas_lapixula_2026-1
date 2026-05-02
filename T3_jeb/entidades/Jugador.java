@@ -39,7 +39,12 @@ public class Jugador {
         limiteActual += (int)(dano / 2);
         if (limiteActual > 100) { limiteActual = 100; } // Overflow de limite
 
-        System.out.println("OUCH! " + this.nombre + " ha recibido " + dano + " de daño!!");
+        if (dano < Integer.MAX_VALUE) {
+            System.out.println("OUCH! " + this.nombre + " ha recibido " + dano + " de daño!!");
+        }
+        else {
+            System.out.println("Cloud recibe " + dano + " de daño explosivo");
+        }
     }
 
     public void recibirChatarra(int chatarra) {

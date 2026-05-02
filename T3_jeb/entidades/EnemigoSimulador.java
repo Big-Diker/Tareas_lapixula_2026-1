@@ -9,8 +9,8 @@ public class EnemigoSimulador extends Enemigo {
             "Soldado común", 
             (int)(Math.random() * 6) + 15, // truncar con el *6 genera: +[0,5] -> numero entre 15 y 20
             0, 
-            new Estadisticas(50, 50, 0, 0, 15, 0)
-        );
+            new Estadisticas(50, 50, 0, 0, 15, 0),
+            0.85f);
     }
 
     public boolean checkDanoSeguro(Jugador cloud) {

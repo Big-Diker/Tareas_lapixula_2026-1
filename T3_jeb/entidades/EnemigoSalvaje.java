@@ -13,7 +13,7 @@ public class EnemigoSalvaje extends Enemigo implements Vulnerable {
     private List<Elemento> inmunidades;
 
     public EnemigoSalvaje(String nombre, int hp, int fuerza, int xp, int chatarra) {
-        super(nombre, xp, chatarra, new Estadisticas(hp, hp, 0, 0, fuerza, 0));
+        super(nombre, xp, chatarra, new Estadisticas(hp, hp, 0, 0, fuerza, 0), 0.85f);
 
         this.debilidades = new ArrayList<>();
         this.resistencias = new ArrayList<>();
