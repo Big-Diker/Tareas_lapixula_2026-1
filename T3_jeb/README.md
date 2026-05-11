@@ -16,11 +16,9 @@ El proyecto incluye un makefile para facilitar su ejecución. Abrir la terminal 
 
 Notas importantes:
 
-    -Es estrictamente necesario que la terminal esté configurada en UTF-8. El juego utiliza bloques de texto con ASCII art en algunas partes, los cuales se desfasarán si se usa otra codificación.
-
-    -En el diseño, se usó una terminal con una anchura de la mitad de un display de 2k 27". Lo digo pues si se usa la terminal en pantalla completa, se verá feo y raro algunas cosas.
-    
-    -Recomiendo correr el código con una terminal dedicada, no con la del vscode o algun ide, en lo personal usé Alacritty.
+-Es estrictamente necesario que la terminal esté configurada en UTF-8. El juego utiliza bloques de texto con ASCII art en algunas partes, los cuales se desfasarán si se usa otra codificación.
+-En el diseño, se usó una terminal con una anchura de la mitad de un display de 2k 27". Lo digo pues si se usa la terminal en pantalla completa, se verá feo y raro algunas cosas.
+-Recomiendo correr el código con una terminal dedicada, no con la del vscode o algun ide, en lo personal usé Alacritty.
 
 
 ## Supuestos y Decisiones de Diseño
