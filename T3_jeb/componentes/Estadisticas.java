@@ -8,6 +8,16 @@ public class Estadisticas {
     private int fuerza;
     private int magia;
 
+    /**
+     * Constructor de la clase Estadisticas.
+     * Inicializa los valores actuales y máximos de vida y magia, además de la fuerza y magia base.
+     * @param hpActual Puntos de vida actuales.
+     * @param hpMaximo Puntos de vida máximos.
+     * @param mpActual Puntos de magia actuales.
+     * @param mpMaximo Puntos de magia máximos.
+     * @param fuerza Poder de ataque físico.
+     * @param magia Poder de ataque mágico.
+     */
     public Estadisticas(int hpActual, int hpMaximo, int mpActual, int mpMaximo, int fuerza, int magia) {
         this.hpActual = hpActual;
         this.hpMaximo = hpMaximo;
@@ -17,6 +27,10 @@ public class Estadisticas {
         this.magia = magia;
     }
 
+    /**
+     * Reduce los puntos de vida actuales asegurando que no desciendan de 0.
+     * @param valor Cantidad de daño recibido a restar.
+     */
     public void recibirDMG(int valor) {
         this.hpActual -= valor;
         if (this.hpActual < 0) {

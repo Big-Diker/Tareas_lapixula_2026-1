@@ -1,0 +1,43 @@
+Date : 2026-05-10 00:50:58
+Directory : /home/na/Github/Tareas_lapixula_2026-1/T3_jeb
+Total : 13 files,  69 codes, -11 comments, 12 blanks, all 70 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Java     |         11 |         67 |        -11 |         11 |         67 |
+| Markdown |          1 |          2 |          0 |          0 |          2 |
+| Makefile |          1 |          0 |          0 |          1 |          1 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                           |         13 |         69 |        -11 |         12 |         70 |
+| . (Files)                                                                   |          3 |         -5 |         -2 |          2 |         -5 |
+| componentes                                                                 |          2 |          3 |         -1 |          1 |          3 |
+| entidades                                                                   |          4 |         15 |         -1 |          3 |         17 |
+| mapa                                                                        |          4 |         56 |         -7 |          6 |         55 |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                    | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/Main.java                     | Java     |         -7 |         -2 |          1 |         -8 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/README.md                     | Markdown |          2 |          0 |          0 |          2 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/componentes/Elemento.java     | Java     |          1 |          0 |          0 |          1 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/componentes/Mejora.java       | Java     |          2 |         -1 |          1 |          2 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/entidades/Enemigo.java        | Java     |          1 |         -1 |          0 |          0 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/entidades/EnemigoSalvaje.java | Java     |          9 |          0 |          3 |         12 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/entidades/Jugador.java        | Java     |          4 |          0 |          0 |          4 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/entidades/Sephiroth.java      | Java     |          1 |          0 |          0 |          1 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/makefile                      | Makefile |          0 |          0 |          1 |          1 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/mapa/Gongaga.java             | Java     |         25 |         -6 |          1 |         20 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/mapa/NucleoPlaneta.java       | Java     |         21 |          0 |          4 |         25 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/mapa/Sector7.java             | Java     |         11 |         -1 |          2 |         12 |
+| /home/na/Github/Tareas_lapixula_2026-1/T3_jeb/mapa/Zona.java                | Java     |         -1 |          0 |         -1 |         -2 |
+| Total                                                                       |          |         69 |        -11 |         12 |         70 |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+

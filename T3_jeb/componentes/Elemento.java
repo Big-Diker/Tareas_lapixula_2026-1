@@ -5,5 +5,7 @@ public enum Elemento {
     HIELO,
     RAYO,
     FISICO,
-    CURA
+    CURA,
+    NULL,
+    LIMITE
 }
