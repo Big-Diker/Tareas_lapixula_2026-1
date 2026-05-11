@@ -139,6 +139,7 @@ public class Jugador {
      * Despliega un menú interactivo en consola para visualizar, equipar y desequipar materias
      * entre la mochila y el arma del jugador, respetando el límite de ranuras.
      */
+    @SuppressWarnings("resource")
     public void gestionarEquipo() {
         Scanner sc = new Scanner(System.in);
         while (true) {

@@ -28,6 +28,7 @@ public class Gongaga extends Zona {
      * Permite al jugador buscar objetos, gestionar su equipo o retirarse, evaluando la penalización por muerte.
      * @param cloud Objeto Jugador que explora la zona.
      */
+    @SuppressWarnings("resource")
     @Override
     public void accionZona(Jugador cloud) {
         Scanner sc = new Scanner(System.in);

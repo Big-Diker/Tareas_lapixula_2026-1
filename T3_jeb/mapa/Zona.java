@@ -57,6 +57,7 @@ public abstract class Zona {
      * @param enemigos Lista de enemigos a enfrentar en este encuentro.
      * @param puedeHuir Indica si el jugador tiene la opción de intentar escapar del combate.
      */
+    @SuppressWarnings("resource")
     protected void ejecutarBucleCombate(Jugador cloud, List<Enemigo> enemigos, boolean puedeHuir) {
 
         System.out.print("Entras en combate con:");

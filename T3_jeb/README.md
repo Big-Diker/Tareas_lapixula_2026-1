@@ -1,6 +1,13 @@
 # Tarea 3: Final Fantasy VII - UTFSM Edition
 
+Iker Ortiz 
+202473562-4
+
 ## Compilación y Ejecución
+Puede ser relevante mecionar que la tarea se desarrolló, compiló y ejecutó en CachyOS (distro basado en arch btw).
+
+OpenJDK version "26.0.2" y javac 26.0.2 utilizados.
+
 El proyecto incluye un makefile para facilitar su ejecución. Abrir la terminal en la raíz de la tarea y usar los siguientes comandos:
 
 * Para compilar todo el código: `make`
@@ -28,6 +35,7 @@ Se definieron los siguientes supuestos:
 9. En clases como Jugador.java, se dejaron algunos métodos en el cementerio de getters y setters, esto con la razón de que son métodos similares a estos. En el sentido de que consisten en un setter personalizado para mejorar la legibilidad en los otros métodos por ejemplo (tal como subirHP()), mientras que hay otros (como recibirXP) que hacen algo distinto pero de manera muy breve. El primer tipo mencionado no fue comentado, mientras que el segundo si.
 10. Prints: El juego está lleno de comentarios meta con el fin de ojalá darle algo de personalidad al mismo (y de mantener mi sanidad al programarlo, pues me hacía reir poner estupideces).
 11. Mensaje final de victoria: Se eligió la ruta de mostrar un ascii, prefiero no spoilear que es, echarle un ojo!
+12. Se utilizó `@SuppressWarnings("resource")` en algunas instacias del código para suprimir el warning de scanner sin cerrar (No es leak de memoria, pues se cierra al final del main o al terminar la ejecución de una clase)
 
 ## Códigos de Depuración (Cheats)
 Se dejaron habilitados inputs ocultos en los menús de selección para facilitar la revisión del código y testear el final sin necesidad de farmear:

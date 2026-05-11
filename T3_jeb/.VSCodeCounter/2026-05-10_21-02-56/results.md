@@ -1,27 +1,27 @@
 # Summary
 
-Date : 2026-05-10 00:50:58
+Date : 2026-05-10 21:02:56
 
 Directory /home/na/Github/Tareas_lapixula_2026-1/T3_jeb
 
-Total : 19 files,  939 codes, 1 comments, 207 blanks, all 1147 lines
+Total : 18 files,  1159 codes, 314 comments, 231 blanks, all 1704 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Java | 17 | 934 | 1 | 206 | 1,141 |
-| Markdown | 1 | 5 | 0 | 0 | 5 |
-| Makefile | 1 | 0 | 0 | 1 | 1 |
+| Java | 16 | 1,110 | 314 | 218 | 1,642 |
+| Markdown | 1 | 30 | 0 | 10 | 40 |
+| Makefile | 1 | 19 | 0 | 3 | 22 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 19 | 939 | 1 | 207 | 1,147 |
-| . (Files) | 4 | 64 | 0 | 14 | 78 |
-| componentes | 6 | 103 | 0 | 23 | 126 |
-| entidades | 5 | 428 | 0 | 103 | 531 |
-| mapa | 4 | 344 | 1 | 67 | 412 |
+| . | 18 | 1,159 | 314 | 231 | 1,704 |
+| . (Files) | 3 | 104 | 0 | 21 | 125 |
+| componentes | 6 | 105 | 36 | 23 | 164 |
+| entidades | 5 | 491 | 191 | 106 | 788 |
+| mapa | 4 | 459 | 87 | 81 | 627 |
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
